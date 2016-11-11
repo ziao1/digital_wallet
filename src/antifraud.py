@@ -104,9 +104,9 @@ end_data.pop(0)
 ### outptu 3: 4th degree friend
 
 # Create list with default unverified
-output1 = ['unverified'] * len(stream_new)
-output2 = ['unverified'] * len(stream_new)
-output3 = ['unverified'] * len(stream_new)
+output1 = ['unverified'] * len(start_data)
+output2 = ['unverified'] * len(start_data)
+output3 = ['unverified'] * len(start_data)
 for i in range(len(start_data)):
     # print index every 1000 iterations
     if i%1000 ==0:
@@ -140,7 +140,7 @@ file1.close()
 
 file2 = open('./paymo_output/output2.txt', 'w')
 for item in output2:
-    file3.write("%s\n" % item)
+    file2.write("%s\n" % item)
 file2.close()
 
 file3 = open('./paymo_output/output3.txt', 'w')
